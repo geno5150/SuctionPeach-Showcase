@@ -7,19 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2119B556A18D211078A0B1EA /* Pods_SuctionPeach_Showcase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E08A2A9B155879A251500A8 /* Pods_SuctionPeach_Showcase.framework */; };
 		B5DFB0891C28E7B400BBC049 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DFB0881C28E7B400BBC049 /* AppDelegate.swift */; };
 		B5DFB08B1C28E7B400BBC049 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DFB08A1C28E7B400BBC049 /* ViewController.swift */; };
 		B5DFB08E1C28E7B400BBC049 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5DFB08C1C28E7B400BBC049 /* Main.storyboard */; };
 		B5DFB0901C28E7B400BBC049 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5DFB08F1C28E7B400BBC049 /* Assets.xcassets */; };
 		B5DFB0931C28E7B400BBC049 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5DFB0911C28E7B400BBC049 /* LaunchScreen.storyboard */; };
 		B5DFB0A11C28E80400BBC049 /* NotoSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B5DFB09C1C28E80400BBC049 /* NotoSans-BoldItalic.ttf */; };
-		B5DFB0A21C28E80400BBC049 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = B5DFB09D1C28E80400BBC049 /* LICENSE.txt */; };
 		B5DFB0A31C28E80400BBC049 /* NotoSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B5DFB09E1C28E80400BBC049 /* NotoSans-Bold.ttf */; };
 		B5DFB0A41C28E80400BBC049 /* NotoSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B5DFB09F1C28E80400BBC049 /* NotoSans-Italic.ttf */; };
 		B5DFB0A51C28E80400BBC049 /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B5DFB0A01C28E80400BBC049 /* NotoSans-Regular.ttf */; };
+		B5DFB0A91C28F65100BBC049 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DFB0A81C28F65100BBC049 /* MaterialView.swift */; };
+		B5DFB0AC1C28F70B00BBC049 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DFB0AB1C28F70B00BBC049 /* File.swift */; };
+		B5DFB0AE1C28FA9400BBC049 /* MaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DFB0AD1C28FA9400BBC049 /* MaterialButton.swift */; };
+		B5DFB0B01C28FD2100BBC049 /* MaterialTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DFB0AF1C28FD2100BBC049 /* MaterialTextField.swift */; };
+		B5DFB0B51C29043A00BBC049 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5DFB0B21C29043A00BBC049 /* Bolts.framework */; };
+		B5DFB0B61C29043A00BBC049 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5DFB0B31C29043A00BBC049 /* FBSDKCoreKit.framework */; };
+		B5DFB0B71C29043A00BBC049 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5DFB0B41C29043A00BBC049 /* FBSDKLoginKit.framework */; };
+		B5E056781C29142500991622 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E056771C29142500991622 /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E08A2A9B155879A251500A8 /* Pods_SuctionPeach_Showcase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuctionPeach_Showcase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6E6588A014C0277E7C70971 /* Pods-SuctionPeach-Showcase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuctionPeach-Showcase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SuctionPeach-Showcase/Pods-SuctionPeach-Showcase.debug.xcconfig"; sourceTree = "<group>"; };
 		B5DFB0851C28E7B400BBC049 /* SuctionPeach-Showcase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SuctionPeach-Showcase.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5DFB0881C28E7B400BBC049 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5DFB08A1C28E7B400BBC049 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,10 +38,18 @@
 		B5DFB0921C28E7B400BBC049 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5DFB0941C28E7B400BBC049 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5DFB09C1C28E80400BBC049 /* NotoSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-BoldItalic.ttf"; sourceTree = "<group>"; };
-		B5DFB09D1C28E80400BBC049 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		B5DFB09E1C28E80400BBC049 /* NotoSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Bold.ttf"; sourceTree = "<group>"; };
 		B5DFB09F1C28E80400BBC049 /* NotoSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Italic.ttf"; sourceTree = "<group>"; };
 		B5DFB0A01C28E80400BBC049 /* NotoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Regular.ttf"; sourceTree = "<group>"; };
+		B5DFB0A81C28F65100BBC049 /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
+		B5DFB0AB1C28F70B00BBC049 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		B5DFB0AD1C28FA9400BBC049 /* MaterialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialButton.swift; sourceTree = "<group>"; };
+		B5DFB0AF1C28FD2100BBC049 /* MaterialTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialTextField.swift; sourceTree = "<group>"; };
+		B5DFB0B21C29043A00BBC049 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		B5DFB0B31C29043A00BBC049 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		B5DFB0B41C29043A00BBC049 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		B5E056771C29142500991622 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		B691DFA28A5797334E512EF1 /* Pods-SuctionPeach-Showcase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuctionPeach-Showcase.release.xcconfig"; path = "Pods/Target Support Files/Pods-SuctionPeach-Showcase/Pods-SuctionPeach-Showcase.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +57,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5DFB0B51C29043A00BBC049 /* Bolts.framework in Frameworks */,
+				B5DFB0B61C29043A00BBC049 /* FBSDKCoreKit.framework in Frameworks */,
+				B5DFB0B71C29043A00BBC049 /* FBSDKLoginKit.framework in Frameworks */,
+				2119B556A18D211078A0B1EA /* Pods_SuctionPeach_Showcase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +72,8 @@
 			children = (
 				B5DFB0871C28E7B400BBC049 /* SuctionPeach-Showcase */,
 				B5DFB0861C28E7B400BBC049 /* Products */,
+				EF44ACAB82EC02B1A0D71B21 /* Pods */,
+				B6727EFFCF3854BE7E663C0A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +88,11 @@
 		B5DFB0871C28E7B400BBC049 /* SuctionPeach-Showcase */ = {
 			isa = PBXGroup;
 			children = (
+				B5E056761C29141500991622 /* Services */,
+				B5DFB0B11C29040000BBC049 /* Frameworks */,
+				B5DFB0AA1C28F6FB00BBC049 /* Util */,
+				B5DFB0A71C28ECED00BBC049 /* View */,
+				B5DFB0A61C28ECE700BBC049 /* Model */,
 				B5DFB09B1C28E7E200BBC049 /* Resources */,
 				B5DFB09A1C28E7DC00BBC049 /* Data */,
 				B5DFB0881C28E7B400BBC049 /* AppDelegate.swift */,
@@ -87,12 +116,71 @@
 			isa = PBXGroup;
 			children = (
 				B5DFB09C1C28E80400BBC049 /* NotoSans-BoldItalic.ttf */,
-				B5DFB09D1C28E80400BBC049 /* LICENSE.txt */,
 				B5DFB09E1C28E80400BBC049 /* NotoSans-Bold.ttf */,
 				B5DFB09F1C28E80400BBC049 /* NotoSans-Italic.ttf */,
 				B5DFB0A01C28E80400BBC049 /* NotoSans-Regular.ttf */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		B5DFB0A61C28ECE700BBC049 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B5DFB0A71C28ECED00BBC049 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B5DFB0A81C28F65100BBC049 /* MaterialView.swift */,
+				B5DFB0AD1C28FA9400BBC049 /* MaterialButton.swift */,
+				B5DFB0AF1C28FD2100BBC049 /* MaterialTextField.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		B5DFB0AA1C28F6FB00BBC049 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				B5DFB0AB1C28F70B00BBC049 /* File.swift */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		B5DFB0B11C29040000BBC049 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B5DFB0B21C29043A00BBC049 /* Bolts.framework */,
+				B5DFB0B31C29043A00BBC049 /* FBSDKCoreKit.framework */,
+				B5DFB0B41C29043A00BBC049 /* FBSDKLoginKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B5E056761C29141500991622 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B5E056771C29142500991622 /* DataService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		B6727EFFCF3854BE7E663C0A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1E08A2A9B155879A251500A8 /* Pods_SuctionPeach_Showcase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF44ACAB82EC02B1A0D71B21 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A6E6588A014C0277E7C70971 /* Pods-SuctionPeach-Showcase.debug.xcconfig */,
+				B691DFA28A5797334E512EF1 /* Pods-SuctionPeach-Showcase.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,9 +190,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5DFB0971C28E7B400BBC049 /* Build configuration list for PBXNativeTarget "SuctionPeach-Showcase" */;
 			buildPhases = (
+				6A699D1227009EC7EE845C23 /* Check Pods Manifest.lock */,
 				B5DFB0811C28E7B400BBC049 /* Sources */,
 				B5DFB0821C28E7B400BBC049 /* Frameworks */,
 				B5DFB0831C28E7B400BBC049 /* Resources */,
+				A804C8D94F3BFAAE2EC3EE97 /* Embed Pods Frameworks */,
+				1C9C8D819AEE2F65B1254A0C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -159,20 +250,72 @@
 				B5DFB0901C28E7B400BBC049 /* Assets.xcassets in Resources */,
 				B5DFB0A51C28E80400BBC049 /* NotoSans-Regular.ttf in Resources */,
 				B5DFB0A41C28E80400BBC049 /* NotoSans-Italic.ttf in Resources */,
-				B5DFB0A21C28E80400BBC049 /* LICENSE.txt in Resources */,
 				B5DFB08E1C28E7B400BBC049 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1C9C8D819AEE2F65B1254A0C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SuctionPeach-Showcase/Pods-SuctionPeach-Showcase-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A699D1227009EC7EE845C23 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A804C8D94F3BFAAE2EC3EE97 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SuctionPeach-Showcase/Pods-SuctionPeach-Showcase-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B5DFB0811C28E7B400BBC049 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5DFB0B01C28FD2100BBC049 /* MaterialTextField.swift in Sources */,
+				B5E056781C29142500991622 /* DataService.swift in Sources */,
+				B5DFB0A91C28F65100BBC049 /* MaterialView.swift in Sources */,
+				B5DFB0AC1C28F70B00BBC049 /* File.swift in Sources */,
 				B5DFB08B1C28E7B400BBC049 /* ViewController.swift in Sources */,
 				B5DFB0891C28E7B400BBC049 /* AppDelegate.swift in Sources */,
+				B5DFB0AE1C28FA9400BBC049 /* MaterialButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,8 +426,13 @@
 		};
 		B5DFB0981C28E7B400BBC049 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6E6588A014C0277E7C70971 /* Pods-SuctionPeach-Showcase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SuctionPeach-Showcase",
+				);
 				INFOPLIST_FILE = "SuctionPeach-Showcase/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.SuctionPeach.SuctionPeach-Showcase";
@@ -294,8 +442,13 @@
 		};
 		B5DFB0991C28E7B400BBC049 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B691DFA28A5797334E512EF1 /* Pods-SuctionPeach-Showcase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SuctionPeach-Showcase",
+				);
 				INFOPLIST_FILE = "SuctionPeach-Showcase/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.SuctionPeach.SuctionPeach-Showcase";
@@ -322,6 +475,7 @@
 				B5DFB0991C28E7B400BBC049 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
