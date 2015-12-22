@@ -12,6 +12,11 @@
 		B5DFB08E1C28E7B400BBC049 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5DFB08C1C28E7B400BBC049 /* Main.storyboard */; };
 		B5DFB0901C28E7B400BBC049 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5DFB08F1C28E7B400BBC049 /* Assets.xcassets */; };
 		B5DFB0931C28E7B400BBC049 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5DFB0911C28E7B400BBC049 /* LaunchScreen.storyboard */; };
+		B5DFB0A11C28E80400BBC049 /* NotoSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B5DFB09C1C28E80400BBC049 /* NotoSans-BoldItalic.ttf */; };
+		B5DFB0A21C28E80400BBC049 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = B5DFB09D1C28E80400BBC049 /* LICENSE.txt */; };
+		B5DFB0A31C28E80400BBC049 /* NotoSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B5DFB09E1C28E80400BBC049 /* NotoSans-Bold.ttf */; };
+		B5DFB0A41C28E80400BBC049 /* NotoSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B5DFB09F1C28E80400BBC049 /* NotoSans-Italic.ttf */; };
+		B5DFB0A51C28E80400BBC049 /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B5DFB0A01C28E80400BBC049 /* NotoSans-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		B5DFB08F1C28E7B400BBC049 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5DFB0921C28E7B400BBC049 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5DFB0941C28E7B400BBC049 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5DFB09C1C28E80400BBC049 /* NotoSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		B5DFB09D1C28E80400BBC049 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		B5DFB09E1C28E80400BBC049 /* NotoSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Bold.ttf"; sourceTree = "<group>"; };
+		B5DFB09F1C28E80400BBC049 /* NotoSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Italic.ttf"; sourceTree = "<group>"; };
+		B5DFB0A01C28E80400BBC049 /* NotoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +64,8 @@
 		B5DFB0871C28E7B400BBC049 /* SuctionPeach-Showcase */ = {
 			isa = PBXGroup;
 			children = (
+				B5DFB09B1C28E7E200BBC049 /* Resources */,
+				B5DFB09A1C28E7DC00BBC049 /* Data */,
 				B5DFB0881C28E7B400BBC049 /* AppDelegate.swift */,
 				B5DFB08A1C28E7B400BBC049 /* ViewController.swift */,
 				B5DFB08C1C28E7B400BBC049 /* Main.storyboard */,
@@ -62,6 +74,25 @@
 				B5DFB0941C28E7B400BBC049 /* Info.plist */,
 			);
 			path = "SuctionPeach-Showcase";
+			sourceTree = "<group>";
+		};
+		B5DFB09A1C28E7DC00BBC049 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		B5DFB09B1C28E7E200BBC049 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B5DFB09C1C28E80400BBC049 /* NotoSans-BoldItalic.ttf */,
+				B5DFB09D1C28E80400BBC049 /* LICENSE.txt */,
+				B5DFB09E1C28E80400BBC049 /* NotoSans-Bold.ttf */,
+				B5DFB09F1C28E80400BBC049 /* NotoSans-Italic.ttf */,
+				B5DFB0A01C28E80400BBC049 /* NotoSans-Regular.ttf */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,8 +153,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5DFB0A31C28E80400BBC049 /* NotoSans-Bold.ttf in Resources */,
+				B5DFB0A11C28E80400BBC049 /* NotoSans-BoldItalic.ttf in Resources */,
 				B5DFB0931C28E7B400BBC049 /* LaunchScreen.storyboard in Resources */,
 				B5DFB0901C28E7B400BBC049 /* Assets.xcassets in Resources */,
+				B5DFB0A51C28E80400BBC049 /* NotoSans-Regular.ttf in Resources */,
+				B5DFB0A41C28E80400BBC049 /* NotoSans-Italic.ttf in Resources */,
+				B5DFB0A21C28E80400BBC049 /* LICENSE.txt in Resources */,
 				B5DFB08E1C28E7B400BBC049 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
