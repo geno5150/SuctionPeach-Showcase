@@ -10,8 +10,18 @@ import Foundation
 import UIKit
 
 let SHADOW_COLOR: CGFloat = 157.0 / 255.0
+
+//keys
 let KEY_UID = "uid"
 
 //segues
-
 let SEGUE_LOGGED_IN = "loggedIn"
+
+//status code
+let STATUS_ACCT_NONEXIST = -8
+
+//FB profile Pic URL
+var FB_PROFILE_URL = ""
+
+//FB user first name
+var FB_FIRST_NAME = ""

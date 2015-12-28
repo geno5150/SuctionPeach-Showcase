@@ -25,6 +25,9 @@
 		B5DFB0B61C29043A00BBC049 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5DFB0B31C29043A00BBC049 /* FBSDKCoreKit.framework */; };
 		B5DFB0B71C29043A00BBC049 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5DFB0B41C29043A00BBC049 /* FBSDKLoginKit.framework */; };
 		B5E056781C29142500991622 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E056771C29142500991622 /* DataService.swift */; };
+		B5E0567B1C2B8F0C00991622 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E0567A1C2B8F0C00991622 /* FeedVC.swift */; };
+		B5E0567D1C2B8FF400991622 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E0567C1C2B8FF400991622 /* PostCell.swift */; };
+		B5E0567F1C2BBB0900991622 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E0567E1C2BBB0900991622 /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +52,9 @@
 		B5DFB0B31C29043A00BBC049 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		B5DFB0B41C29043A00BBC049 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		B5E056771C29142500991622 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		B5E0567A1C2B8F0C00991622 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		B5E0567C1C2B8FF400991622 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		B5E0567E1C2BBB0900991622 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		B691DFA28A5797334E512EF1 /* Pods-SuctionPeach-Showcase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuctionPeach-Showcase.release.xcconfig"; path = "Pods/Target Support Files/Pods-SuctionPeach-Showcase/Pods-SuctionPeach-Showcase.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,6 +94,7 @@
 		B5DFB0871C28E7B400BBC049 /* SuctionPeach-Showcase */ = {
 			isa = PBXGroup;
 			children = (
+				B5E056791C2B8EE700991622 /* Controller */,
 				B5E056761C29141500991622 /* Services */,
 				B5DFB0B11C29040000BBC049 /* Frameworks */,
 				B5DFB0AA1C28F6FB00BBC049 /* Util */,
@@ -96,7 +103,6 @@
 				B5DFB09B1C28E7E200BBC049 /* Resources */,
 				B5DFB09A1C28E7DC00BBC049 /* Data */,
 				B5DFB0881C28E7B400BBC049 /* AppDelegate.swift */,
-				B5DFB08A1C28E7B400BBC049 /* ViewController.swift */,
 				B5DFB08C1C28E7B400BBC049 /* Main.storyboard */,
 				B5DFB08F1C28E7B400BBC049 /* Assets.xcassets */,
 				B5DFB0911C28E7B400BBC049 /* LaunchScreen.storyboard */,
@@ -126,6 +132,7 @@
 		B5DFB0A61C28ECE700BBC049 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B5E0567E1C2BBB0900991622 /* Post.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -136,6 +143,7 @@
 				B5DFB0A81C28F65100BBC049 /* MaterialView.swift */,
 				B5DFB0AD1C28FA9400BBC049 /* MaterialButton.swift */,
 				B5DFB0AF1C28FD2100BBC049 /* MaterialTextField.swift */,
+				B5E0567C1C2B8FF400991622 /* PostCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -164,6 +172,15 @@
 				B5E056771C29142500991622 /* DataService.swift */,
 			);
 			name = Services;
+			sourceTree = "<group>";
+		};
+		B5E056791C2B8EE700991622 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B5DFB08A1C28E7B400BBC049 /* ViewController.swift */,
+				B5E0567A1C2B8F0C00991622 /* FeedVC.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 		B6727EFFCF3854BE7E663C0A /* Frameworks */ = {
@@ -313,9 +330,12 @@
 				B5E056781C29142500991622 /* DataService.swift in Sources */,
 				B5DFB0A91C28F65100BBC049 /* MaterialView.swift in Sources */,
 				B5DFB0AC1C28F70B00BBC049 /* File.swift in Sources */,
+				B5E0567B1C2B8F0C00991622 /* FeedVC.swift in Sources */,
+				B5E0567D1C2B8FF400991622 /* PostCell.swift in Sources */,
 				B5DFB08B1C28E7B400BBC049 /* ViewController.swift in Sources */,
 				B5DFB0891C28E7B400BBC049 /* AppDelegate.swift in Sources */,
 				B5DFB0AE1C28FA9400BBC049 /* MaterialButton.swift in Sources */,
+				B5E0567F1C2BBB0900991622 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
