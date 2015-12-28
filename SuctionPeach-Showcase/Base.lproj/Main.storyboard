@@ -35,7 +35,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JZB-ZM-xYD">
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JZB-ZM-xYD">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="126"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Sign In/ Sign Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ris-Ln-w5a">
@@ -288,11 +288,22 @@
                                                                             </constraints>
                                                                         </imageView>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DemonSlayer31" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="0.75" translatesAutoresizingMaskIntoConstraints="NO" id="q3U-pg-BqV">
-                                                                            <rect key="frame" x="66" y="0.0" width="351" height="60"/>
+                                                                            <rect key="frame" x="66" y="0.0" width="215" height="60"/>
                                                                             <fontDescription key="fontDescription" name="NotoSans-Bold" family="Noto Sans" pointSize="17"/>
                                                                             <color key="textColor" red="1" green="0.77321680559999995" blue="0.34222812540000003" alpha="1" colorSpace="calibratedRGB"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
+                                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s32-dT-K6t" customClass="MaterialButton" customModule="SuctionPeach_Showcase" customModuleProvider="target">
+                                                                            <rect key="frame" x="287" y="0.0" width="130" height="60"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="height" constant="40" id="4Wb-DS-5Aa"/>
+                                                                                <constraint firstAttribute="width" constant="130" id="uDd-bj-qS3"/>
+                                                                            </constraints>
+                                                                            <state key="normal" title="Share on FB" image="fb-share"/>
+                                                                            <connections>
+                                                                                <action selector="facebookShareTapped:" destination="UGN-Ty-MlC" eventType="touchUpInside" id="apN-Gf-6UB"/>
+                                                                            </connections>
+                                                                        </button>
                                                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hollowheart" translatesAutoresizingMaskIntoConstraints="NO" id="W98-se-tpv">
                                                                             <rect key="frame" x="423" y="0.0" width="60" height="60"/>
                                                                             <constraints>
@@ -371,6 +382,7 @@
                                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <outlet property="descriptionText" destination="72P-Wo-wcC" id="yTN-Tg-mZp"/>
+                                            <outlet property="fbShareButton" destination="s32-dT-K6t" id="Nl5-jP-W4f"/>
                                             <outlet property="likeImage" destination="W98-se-tpv" id="PQ3-rL-nMW"/>
                                             <outlet property="likesLbl" destination="pIx-sH-k2F" id="gjt-bG-MLE"/>
                                             <outlet property="postName" destination="q3U-pg-BqV" id="rpx-e0-wmm"/>
@@ -446,6 +458,7 @@
         <image name="SuctionPeachOriginal" width="793" height="118"/>
         <image name="camera-outline" width="512" height="512"/>
         <image name="facebook_2" width="1334" height="1334"/>
+        <image name="fb-share" width="218" height="65"/>
         <image name="hollowheart" width="2000" height="1891"/>
         <image name="mindbender" width="210" height="240"/>
     </resources>

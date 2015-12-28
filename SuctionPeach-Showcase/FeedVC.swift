@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 import Alamofire
+import Social
 
 class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate     {
     
@@ -21,11 +22,12 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
     @IBOutlet weak var imageSelectorCamera: UIImageView!
     @IBOutlet weak var posterImage: UIImageView!
     @IBOutlet weak var posterName: UILabel!
-  
+    @IBOutlet weak var fbShareButton: MaterialButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        //PostCell.parentVC = self
         imagePicker = UIImagePickerController()
         imagePicker.delegate = self
         tableView.delegate = self
@@ -70,7 +72,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
                img = FeedVC.imgCache.objectForKey(url) as? UIImage
             }
             
-            cell.configureCell(post, img: img)
+            cell.configureCell(post, img: img, upperVC: self)
             return cell
             
         }else{

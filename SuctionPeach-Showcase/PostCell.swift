@@ -9,6 +9,8 @@
 import UIKit
 import Alamofire
 import Firebase
+import Social
+import FBSDKShareKit
 
 class PostCell: UITableViewCell {
 
@@ -18,6 +20,18 @@ class PostCell: UITableViewCell {
     @IBOutlet weak var likesLbl: UILabel!
     @IBOutlet weak var likeImage: UIImageView!
     @IBOutlet weak var postName: UILabel!
+    @IBOutlet weak var fbShareButton: UIButton!
+    var parentVC: FeedVC!
+    let content : FBSDKShareLinkContent = FBSDKShareLinkContent()
+    
+    
+    //content.contentURL = NSURL(string: "<INSERT STRING HERE>")
+    
+    
+   /* content.contentTitle = "Posting Method #2"
+    content.contentDescription = "Description of the Content"
+    content.imageURL = NSURL(string: "<INSERT STRING HERE>")
+    */
     
     var post: Post!
     var request: Request?
@@ -46,7 +60,8 @@ class PostCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
-    func configureCell(post: Post, img: UIImage?){
+    func configureCell(post: Post, img: UIImage?, upperVC: FeedVC){
+        self.parentVC = upperVC
        self.post = post
         likeRef = DataService.ds.REF_CURRENT_USER.childByAppendingPath("likes").childByAppendingPath(post.postKey)
        
@@ -138,4 +153,22 @@ class PostCell: UITableViewCell {
 
         
     }
+    
+    @IBAction func facebookShareTapped(sender: AnyObject) {
+        
+        if SLComposeViewController.isAvailableForServiceType(SLServiceTypeFacebook){
+            let facebookSheet:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
+            facebookSheet.setInitialText("Share on Facebook")
+        
+            facebookSheet.addImage(showcaseImg.image)
+         var url = NSURL(fileURLWithPath: "http://www.van-halen.com")
+            facebookSheet.addURL(url)
+            parentVC.presentViewController(facebookSheet,animated: true, completion: nil)
+        } else {
+            let alert = UIAlertController(title: "Accounts", message: "Please login to a Facebook account to share.", preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+            parentVC.presentViewController(alert, animated: true, completion: nil)
+        }
+    }
+    
 }
