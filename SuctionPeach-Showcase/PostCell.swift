@@ -160,7 +160,7 @@ class PostCell: UITableViewCell {
             let facebookSheet:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
             facebookSheet.setInitialText("Share on Facebook")
         
-            facebookSheet.addImage(showcaseImg.image)
+            //facebookSheet.addImage(showcaseImg.image)
          var url = NSURL(fileURLWithPath: "http://www.van-halen.com")
             facebookSheet.addURL(url)
             parentVC.presentViewController(facebookSheet,animated: true, completion: nil)
